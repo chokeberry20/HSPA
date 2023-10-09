@@ -8,7 +8,7 @@
                 <label for="name">Name</label>
                 <input type="text" class="form-control" #propName="ngModel" ngModel name="Name" required minlength="5">
                 <span *ngIf="!propName.valid && propName.touched" class="error-block">                    
-                    <span *ngIf="propName.errors?.['minlength']">Name have to be more than 5 charachters</span>
+                    <span *ngIf="propName.errors?.['minlength']">Name have to be more than 5 characters!</span>
                     <span *ngIf="propName.errors?.['required']">Please, provide your name!</span>
                 </span>
             </div>
